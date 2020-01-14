@@ -147,7 +147,7 @@ expres: expres plus expres
 logoper: less | greater | less equal | greater equal | equal | diff
 ;
 
-operand: IDF | entier | reel | '(' sentier ')' | '(' sreel ')' 
+operand: IDF | entier | reel | '(' sentier ')' | '(' sreel ')' | c | chaine1
 ;
 
 %%
