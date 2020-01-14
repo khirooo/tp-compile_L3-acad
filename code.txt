@@ -1,0 +1,73 @@
+PROGRAM Khiro 
+        // PARTIE DECLARATION //
+//one variable //
+    var Khiro : INT £
+    Let X : INT = (-5) £
+// const //
+    Let Mystring : CHAR = 'h' £
+
+//multivariable //
+    var Nom || Prenome || Date : STRING £
+
+
+// tableau //
+    var Tab [41] :  [FLOAT] £ 
+
+BEGIN
+        // PARTIE CODE //
+
+//les instruction //
+X=5 £
+Y=X*(2+1)/(3-(-9))£
+
+SHOW(«valeur de x est $»:X) £
+GET(«%»:@Z) £
+
+// condition //
+IF(A<<B)
+{
+    Min=A £
+}
+ELSE
+{
+    Min=B £
+}
+
+// Boucle //
+
+FOR(X : 2 :I == 5)
+    GET(«$»:@X) £
+    I=I+1 £
+END_FOR
+
+// kahloutaaa //
+
+FOR(X : 2 :I == 5)
+
+    IF(A<<B)
+    {
+        FOR(X : 2 :I == 5)
+        GET(«$»:@X) £
+        I=I+1 £
+        END_FOR
+        Min=A £
+    }
+    ELSE
+    {
+        IF(A<<B)
+        {
+            Min=A £
+        }
+        ELSE
+        {
+            Min=B £
+        }
+        Min=B £
+    }
+
+    GET(«$»:@X) £
+    I=I+1 £
+    
+END_FOR
+
+END
